@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+  :root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+  }
+
+  * {
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+</style>
+</head>
+
+<body>
+  <main
+    class="min-h-screen w-full flex items-center justify-center bg-[var(--dark-cyan)] relative overflow-hidden px-4 py-6">
+    <img class="absolute bottom-1/2 right-1/2" src="./images/bg-pattern-top.svg" alt="">
+    <img class="absolute top-1/2 left-1/2" src="./images/bg-pattern-bottom.svg" alt="">
+    <!-- card -->
+    <div class="rounded-xl overflow-hidden bg-white shadow-xl isolate">
+      <img src="./images/bg-pattern-card.svg" alt="">
+      <div class="text-lg pb-2">
+        <img class="h-24 w-24 rounded-full border-4 border-white mx-auto -mt-12 isolate mb-4" src="./images/nitish.jpg"
+          alt="">
+        <div class="flex items-center justify-center gap-4 mb-2">
+          <h1 class="capitalize font-bold">nitish mahawar</h1>
+          <p class="text-[var(--dark-gray)]">22</p>
+        </div>
+        <div class="text-center text-[var(--dark-gray)] text-base mb-6">Jaipur</div>
+        <!-- states -->
+        <div class="flex justify-evenly py-6 border-t">
+          <!-- 1 -->
+          <div class="flex items-center flex-col">
+            <div class="font-bold">700K</div>
+            <div class="text-xs text-[var(--dark-gray)] tracking-widest">Followers</div>
+          </div>
+          <!-- 2 -->
+          <div class="flex items-center flex-col">
+            <div class="font-bold">10.7M</div>
+            <div class="text-xs text-[var(--dark-gray)] tracking-widest">Likes</div>
+          </div>
+          <!-- 3 -->
+          <div class="flex items-center flex-col">
+            <div class="font-bold">2.3K</div>
+            <div class="text-xs text-[var(--dark-gray)] tracking-widest">Photos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Victor Crest
+  26
+  London
+
+  80K
+  Followers
+
+  803K
+  Likes
+
+  1.4K
+  Photos -->
+
+</body>
+
+</html>
